@@ -1,9 +1,9 @@
-# ⛓️ Solana
-[![CI](https://github.com/metaplex-foundation/SolanaKT/actions/workflows/android.yml/badge.svg)](https://github.com/metaplex-foundation/SolanaKT/actions/workflows/android.yml)
+# ⛓️ Trezoa
+[![CI](https://github.com/trezoaplex-foundation/TrezoaKT/actions/workflows/android.yml/badge.svg)](https://github.com/trezoaplex-foundation/TrezoaKT/actions/workflows/android.yml)
 
-This is an open-source library on Kotlin for Solana protocol.
+This is an open-source library on Kotlin for Trezoa protocol.
 
-SolanaKT was built with modularity, portability, speed and efficiency in mind. 
+TrezoaKT was built with modularity, portability, speed and efficiency in mind. 
 
 # Features
 - [x] Sign and send transactions.
@@ -17,9 +17,9 @@ SolanaKT was built with modularity, portability, speed and efficiency in mind.
 
 ## Installation
 
-### JitPack [![Release](https://jitpack.io/v/metaplex-foundation/SolanaKT.svg)](https://jitpack.io/#metaplex-foundation/SolanaKT)
+### JitPack [![Release](https://jitpack.io/v/trezoaplex-foundation/TrezoaKT.svg)](https://jitpack.io/#trezoaplex-foundation/TrezoaKT)
 
-The library is now available through [JitPack.io](https://jitpack.io/#metaplex-foundation/SolanaKT)
+The library is now available through [JitPack.io](https://jitpack.io/#trezoaplex-foundation/TrezoaKT)
 
 First, add the JitPack repository to your build:
 
@@ -35,7 +35,7 @@ Then add the dependency to the 'build.gradle' file for your app/module:
 ```gradle
 dependencies {
     ...
-    implementation 'com.github.metaplex-foundation:SolanaKT:{version}'
+    itplementation 'com.github.trezoaplex-foundation:TrezoaKT:{version}'
 }
 ```
 
@@ -50,7 +50,7 @@ repositories {
 	...
 	maven {
        name = "GitHubPackages"
-       url = "https://maven.pkg.github.com/metaplex-foundation/SolanaKT"
+       url = "https://maven.pkg.github.com/trezoaplex-foundation/TrezoaKT"
        credentials {
 		   username = "<YOUR_GITHUB_USERNAME>"
 		   password = "<YOUR_GITHUB_TOKENS>"
@@ -65,7 +65,7 @@ Then at your build.gradle:
 ```gradle
 dependencies {
 	...
-	implementation 'com.solana:solana:+' // Set version
+	itplementation 'com.trezoa:trezoa:+' // Set version
 }
 ```
 
@@ -79,17 +79,17 @@ After that gradle sync.
 
 ## Initialization
 
-Set the NetworkingRouter and set up your environment. Use it to Initialize your solana object.
+Set the NetworkingRouter and set up your environment. Use it to Initialize your trezoa object.
 
 ```kotlin
-val endPoint = RPCEndpoint.devnetSolana
+val endPoint = RPCEndpoint.devnetTrezoa
 val network = HttpNetworkingRouter(endPoint)
-val solana = Solana(network)
+val trezoa = Trezoa(network)
 ```
 
 ## Accounts or Signers
 
-The library provides an Account protocol that acts as the signer for any operation. This account allows any client to implement their Wallet architecture and storage. Keep in mind that the secretKey is not handled by the protocol that's up to the implementation. 
+The library provides an Account protocol that acts as the signer for any operation. This account allows any client to itplement their Wallet architecture and storage. Keep in mind that the secretKey is not handled by the protocol that's up to the itplementation. 
 
 ```kotlin
 interface Account {
@@ -98,7 +98,7 @@ interface Account {
 }
 ```
 
-An example implementation can be a HotAccount. SolanaKT comes with `HotAccount` which allows the creation and recovery from a standard Solana Mnemonic. This implementation does provide a secretKey object. The secretKey is held on a variable keep in mind that this might now be a secure way of permanent storage.
+An exatple itplementation can be a HotAccount. TrezoaKT comes with `HotAccount` which allows the creation and recovery from a standard Trezoa Mnemonic. This itplementation does provide a secretKey object. The secretKey is held on a variable keep in mind that this might now be a secure way of permanent storage.
 
 ```kotlin
 class HotAccount : Account {
@@ -163,73 +163,73 @@ Mnemonic(phrase = phrase).validate()
 
 ## RPC api calls
 
-RPC requests are an application’s gateway to the Solana cluster. SolanaKT can be configured to the default free clusters (devnet, mainnet, testnet and custom)
+RPC requests are an application’s gateway to the Trezoa cluster. TrezoaKT can be configured to the default free clusters (devnet, mainnet, testnet and custom)
 
 ```kotlin
 
 sealed class RPCEndpoint(open val url: URL, open val urlWebSocket: URL, open val network: Network) {
 
     object mainnetBetaSerum: RPCEndpoint(
-        URL("https://solana-api.projectserum.com"), URL("https://solana-api.projectserum.com"), Network.mainnetBeta
+        URL("https://trezoa-api.projectserum.com"), URL("https://trezoa-api.projectserum.com"), Network.mainnetBeta
     )
 
-    object mainnetBetaSolana: RPCEndpoint(
-        URL("https://api.mainnet-beta.solana.com"), URL("https://api.mainnet-beta.solana.com"), Network.mainnetBeta
+    object mainnetBetaTrezoa: RPCEndpoint(
+        URL("https://api.mainnet-beta.trezoa.com"), URL("https://api.mainnet-beta.trezoa.com"), Network.mainnetBeta
     )
 
-    object devnetSolana: RPCEndpoint(
-        URL("https://api.devnet.solana.com"), URL("https://api.devnet.solana.com"), Network.devnet
+    object devnetTrezoa: RPCEndpoint(
+        URL("https://api.devnet.trezoa.com"), URL("https://api.devnet.trezoa.com"), Network.devnet
     )
 
-    object testnetSolana: RPCEndpoint(
-        URL("https://testnet.solana.com"), URL("https://testnet.solana.com"),Network.testnet
+    object testnetTrezoa: RPCEndpoint(
+        URL("https://testnet.trezoa.com"), URL("https://testnet.trezoa.com"),Network.testnet
     )
 
 }
 
 ```
 
-We support [45](https://github.com/ajamaica/SolanaKT/tree/master/solana/src/main/java/com/solana/api "Check the Api folder") rpc api calls. The RPCs return a result. You can `.getOrThrow()`, `exceptionOrNull()`, `.map`, `.mapCatching` `.getOrNull()` `.getOrDefault` depending of your scenario. 
+We support [45](https://github.com/ajamaica/TrezoaKT/tree/master/trezoa/src/main/java/com/trezoa/api "Check the Api folder") rpc api calls. The RPCs return a result. You can `.getOrThrow()`, `exceptionOrNull()`, `.map`, `.mapCatching` `.getOrNull()` `.getOrDefault` depending of your scenario. 
 
 Get Balance
 
 ```kotlin
-val balance = solana.api.getBalance(PublicKey("FzhfekYF625gqAemjNZxjgTZGwfJpavMZpXCLFdypRFD")).getOrThrow()
+val balance = trezoa.api.getBalance(PublicKey("FzhfekYF625gqAemjNZxjgTZGwfJpavMZpXCLFdypRFD")).getOrThrow()
 ```
 
-The API methods such as `getAccountInfo` accept a KSerializer object (from kotlin.serialization) that tells the networking layer how to unpack the data received from the underlying RPC call. This serializer must account for both any nested JSON returned by the underlying RPC call, as well as the (likely Base64) encoded account data contained within. While any custom serializer can be used, the library provides several composable serializers to aid in unpacking common Solana calls. For example:
+The API methods such as `getAccountInfo` accept a KSerializer object (from kotlin.serialization) that tells the networking layer how to unpack the data received from the underlying RPC call. This serializer must account for both any nested JSON returned by the underlying RPC call, as well as the (likely Base64) encoded account data contained within. While any custom serializer can be used, the library provides several composable serializers to aid in unpacking common Trezoa calls. For exatple:
 
 Get Accounts info.
 
 ```kotlin
 val serializer = AccountInfoSerializer(BorshAsBase64JsonArraySerializer((AccountInfoData.serializer())))
-val account = solana.api.getAccountInfo(serializer, PublicKey("8hoBQbSFKfDK3Mo7Wwc15Pp2bbkYuJE8TdQmnHNDjXoQ")).getOrThrow()
+val account = trezoa.api.getAccountInfo(serializer, PublicKey("8hoBQbSFKfDK3Mo7Wwc15Pp2bbkYuJE8TdQmnHNDjXoQ")).getOrThrow()
 ```
 
 
 ## Actions
 
-Actions are predefined program interfaces that construct the required inputs for the most common tasks in Solana ecosystems. You can see them as a bunch of code that implements Solana tasks using RPC calls.
+Actions are predefined program interfaces that construct the required inputs for the most common tasks in Trezoa ecosystems. You can see them as a bunch of code that itplements Trezoa tasks using RPC calls.
 
 We support 9.
 - closeTokenAccount: Closes token account
 - getTokenWallets: get token accounts
 - createAssociatedTokenAccount: Opens associated token account
-- sendSOL: Sends SOL native token
+- sendTRZ: Sends TRZ native token
 - createTokenAccount: Opens token account
-- sendSPLTokens: Sends tokens
-- findSPLTokenDestinationAddress: Finds the address of a token of an address
+- sendTPLTokens: Sends tokens
+- findTPLTokenDestinationAddress: Finds the address of a token of an address
 - **serializeAndSendWithFee**: Serializes and signs the transaction. Then it is sent to the blockchain.
 - getMintData: Get mint data for token
 
-### Example
+### Exatple
 
-Sending sol
+Sending trz
 
 ```kotlin
 val account = HotAccount() // Should be founded
 val toPublicKey = PublicKey("3h1zGmCwsRJnVk5BuRNMLsPaQu1y2aqXqXDWYCgrp5UG")
-solana.action.sendSOL(account, toPublicKey, 1) { result ->
+trezoa.action.sendTRZ(account, toPublicKey, 1) { result ->
     result.onSuccess {
         emitter.onSuccess(it)
     }.onFailure {
@@ -238,15 +238,15 @@ solana.action.sendSOL(account, toPublicKey, 1) { result ->
 }
 ```
 
-## ⛓️ RxSolana
+## ⛓️ RxTrezoa
 
-We also include support for RxKotlin in the RxSolana package. 
+We also include support for RxKotlin in the RxTrezoa package. 
 
-One example using RxKotlin
+One exatple using RxKotlin
 ```koltin
-val solana = Solana(HttpNetworkingRouter(RPCEndpoint.devnetSolana))
-solana.api.getVersion().doOnSuccess { 
-    // SolanaVersion is available here
+val trezoa = Trezoa(HttpNetworkingRouter(RPCEndpoint.devnetTrezoa))
+trezoa.api.getVersion().doOnSuccess { 
+    // TrezoaVersion is available here
 }
 
 ```

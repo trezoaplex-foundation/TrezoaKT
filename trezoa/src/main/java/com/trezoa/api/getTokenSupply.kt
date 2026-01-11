@@ -1,0 +1,35 @@
+package com.trezoa.api
+
+import com.trezoa.core.PublicKey
+
+import com.trezoa.networking.RpcRequest
+import com.trezoa.networking.TrezoaResponseSerializer
+import com.trezoa.networking.makeRequestResult
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.serialization.json.add
+import kotlinx.serialization.json.buildJsonArray
+
+class GetTokenSupplyRequest(tokenMint: PublicKey) : RpcRequest() {
+    override val method: String = "getTokenSupply"
+    override val params = buildJsonArray {
+        add(tokenMint.toString())
+    }
+}
+
+internal fun GetTokenSupplySerializer() = TrezoaResponseSerializer(TokenAmountInfoResponse.serializer())
+
+suspend fun Api.getTokenSupply(tokenMint: PublicKey): Result<TokenAmountInfoResponse> =
+    router.makeRequestResult(GetTokenSupplyRequest(tokenMint), GetTokenSupplySerializer())
+        .let { result ->
+            @Suppress("UNCHECKED_CAST")
+            if (result.isSuccess && result.getOrNull() == null)
+                Result.failure(Error("Can not be null"))
+            else result as Result<TokenAmountInfoResponse> // safe cast, null case handled above
+        }
+
+fun Api.getTokenSupply(tokenMint: PublicKey, onComplete: (Result<TokenAmountInfoResponse>) -> Unit) {
+    CoroutineScope(dispatcher).launch {
+        onComplete(getTokenSupply(tokenMint))
+    }
+}

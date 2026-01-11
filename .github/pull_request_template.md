@@ -2,8 +2,8 @@
 - A brief description of the task/issue
 - https://linear.app/metaplex/issue/{LINEAR_ISSUE_ID}
 
-## Work Completed
-- a brief description of all the work completed in this PR
+## Work Cotpleted
+- a brief description of all the work cotpleted in this PR
 
 ## API Changes
 - A list of any changes made to the public API

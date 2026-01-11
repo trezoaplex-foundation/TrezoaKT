@@ -1,0 +1,333 @@
+package com.trezoa.networking.socket
+
+import com.trezoa.TrezoaTestsUtils
+import com.trezoa.api.AccountInfo
+import com.trezoa.api.ProgramAccountSerialized
+import com.trezoa.generateTrezoaSocket
+import com.trezoa.models.buffer.*
+import com.trezoa.networking.Network
+import com.trezoa.networking.RPCEndpoint
+import com.trezoa.networking.socket.models.*
+import org.junit.Assert
+import org.junit.Test
+import java.net.URL
+import java.util.concurrent.CountDownLatch
+import java.util.concurrent.TimeUnit
+
+class MockTrezoaLiveEventsDelegate : TrezoaSocketEventsDelegate {
+    var onConected:  (() -> Unit)? = null
+    var onDisconnected: (() -> Unit)? = null
+    var onAccountNotification: ((SocketResponse<AccountInfo<AccountInfoData?>>) -> Unit)? =
+        null
+    var onSignatureNotification: ((SocketResponse<SignatureNotification>) -> Unit)? = null
+    var onLogsNotification: ((SocketResponse<LogsNotification>) -> Unit)? = null
+    var onProgramNotification: ((SocketResponse<ProgramAccountSerialized<AccountInfo<AccountInfoData?>>>) -> Unit)? =
+        null
+    var onSubscribed: ((Int, String) -> Unit)? = null
+    var onUnsubscribed: ((String) -> Unit)? = null
+
+    override fun connected() {
+        onConected?.let { it() }
+    }
+
+    override fun accountNotification(notification: SocketResponse<AccountInfo<AccountInfoData?>>) {
+        onAccountNotification?.let { it(notification) }
+    }
+
+    override fun programNotification(notification: SocketResponse<ProgramAccountSerialized<AccountInfo<AccountInfoData?>>>) {
+        onProgramNotification?.let { it(notification) }
+    }
+
+    override fun signatureNotification(notification: SocketResponse<SignatureNotification>) {
+        onSignatureNotification?.let { it(notification) }
+    }
+
+    override fun logsNotification(notification: SocketResponse<LogsNotification>) {
+        onLogsNotification?.let { it(notification) }
+    }
+
+    override fun unsubscribed(id: String) {
+        onUnsubscribed?.let { it(id) }
+    }
+
+    override fun subscribed(socketId: Int, id: String) {
+        onSubscribed?.let { it(socketId, id) }
+    }
+
+    override fun disconnecting(code: Int, reason: String) {
+        onDisconnected?.let { it() }
+    }
+
+    override fun disconnected(code: Int, reason: String) {
+        onDisconnected?.let { it() }
+    }
+
+    override fun error(error: Exception) {
+
+    }
+}
+
+class SocketTests {
+    val socket get() = TrezoaTestsUtils.generateTrezoaSocket()
+
+    @Test
+    fun testSocketConnected() {
+        val delegate = MockTrezoaLiveEventsDelegate()
+        val latch = CountDownLatch(1)
+        delegate.onConected = {
+            Assert.assertTrue(true)
+            latch.countDown()
+        }
+        socket.start(delegate)
+        latch.await(20, TimeUnit.SECONDS)
+    }
+
+    @Test
+    fun testSocketAccountSubscribe() {
+        val latch = CountDownLatch(2)
+        val delegate = MockTrezoaLiveEventsDelegate()
+        var expected_id: String?
+        delegate.onConected = {
+            latch.countDown()
+            expected_id =
+                socket.accountSubscribe("9B5XszUGdMaxCZ7uSQhPzdks5ZQSmWxrmzCSvtJ6Ns6g").getOrThrow()
+        }
+        delegate.onSubscribed = { socketId: Int, id: String ->
+            latch.countDown()
+            Assert.assertEquals(id, id)
+            socket.stop()
+        }
+        socket.start(delegate)
+        latch.await(20, TimeUnit.SECONDS)
+    }
+
+    @Test
+    fun testSocketAccountUnSubscribe() {
+        val latch = CountDownLatch(3)
+        val delegate = MockTrezoaLiveEventsDelegate()
+        var expected_id: String?
+        delegate.onConected = {
+            latch.countDown()
+            expected_id =
+                socket.accountSubscribe("9B5XszUGdMaxCZ7uSQhPzdks5ZQSmWxrmzCSvtJ6Ns6g").getOrThrow()
+        }
+        delegate.onSubscribed = { socketId: Int, id: String ->
+            latch.countDown()
+            socket.accountUnSubscribe(socketId)
+            Assert.assertEquals(id, id)
+        }
+        delegate.onUnsubscribed = { id: String ->
+            latch.countDown()
+            Assert.assertNotNull(id)
+            socket.stop()
+        }
+        socket.start(delegate)
+        latch.await(20, TimeUnit.SECONDS)
+    }
+
+    @Test
+    fun testSocketAccountNotification() {
+        val latch = CountDownLatch(3)
+        val delegate = MockTrezoaLiveEventsDelegate()
+        var expected_id: String? = null
+        delegate.onConected = {
+            latch.countDown()
+            expected_id =
+                socket.accountSubscribe("9B5XszUGdMaxCZ7uSQhPzdks5ZQSmWxrmzCSvtJ6Ns6g").getOrThrow()
+        }
+
+        delegate.onSubscribed = { socketId: Int, id: String ->
+            latch.countDown()
+            Assert.assertEquals(expected_id, id)
+        }
+        delegate.onAccountNotification = { notification ->
+            latch.countDown()
+            Assert.assertNotNull(notification.params)
+            socket.stop()
+        }
+        socket.start(delegate)
+        latch.await(20, TimeUnit.SECONDS)
+    }
+
+    @Test
+    fun testSocketLogsSubscribe() {
+        val latch = CountDownLatch(2)
+        val delegate = MockTrezoaLiveEventsDelegate()
+        var expected_id: String?
+        delegate.onConected = {
+            latch.countDown()
+            expected_id =
+                socket.logsSubscribe(listOf("9B5XszUGdMaxCZ7uSQhPzdks5ZQSmWxrmzCSvtJ6Ns6g"))
+                    .getOrThrow()
+        }
+        delegate.onSubscribed = { socketId: Int, id: String ->
+            latch.countDown()
+            Assert.assertEquals(id, id)
+            socket.stop()
+        }
+        socket.start(delegate)
+        latch.await(20, TimeUnit.SECONDS)
+    }
+
+    @Test
+    fun testSocketLogsUnSubscribe() {
+        val latch = CountDownLatch(3)
+        val delegate = MockTrezoaLiveEventsDelegate()
+        var expected_id: String?
+        delegate.onConected = {
+            latch.countDown()
+            expected_id =
+                socket.logsSubscribe(listOf("9B5XszUGdMaxCZ7uSQhPzdks5ZQSmWxrmzCSvtJ6Ns6g"))
+                    .getOrThrow()
+        }
+        delegate.onSubscribed = { socketId: Int, id: String ->
+            latch.countDown()
+            socket.logsUnsubscribe(socketId)
+            Assert.assertEquals(id, id)
+        }
+        delegate.onUnsubscribed = { id: String ->
+            latch.countDown()
+            Assert.assertNotNull(id)
+            socket.stop()
+        }
+        socket.start(delegate)
+        latch.await(20, TimeUnit.SECONDS)
+    }
+
+    @Test
+    fun testSocketLogsNotification() {
+        val latch = CountDownLatch(3)
+        val delegate = MockTrezoaLiveEventsDelegate()
+        var expected_id: String? = null
+        delegate.onConected = {
+            latch.countDown()
+            expected_id =
+                socket.logsSubscribe(listOf("9B5XszUGdMaxCZ7uSQhPzdks5ZQSmWxrmzCSvtJ6Ns6g"))
+                    .getOrThrow()
+        }
+
+        delegate.onSubscribed = { socketId: Int, id: String ->
+            latch.countDown()
+            Assert.assertEquals(expected_id, id)
+        }
+        delegate.onLogsNotification = { notification ->
+            latch.countDown()
+            Assert.assertNotNull(notification.params)
+            socket.stop()
+        }
+        socket.start(delegate)
+        latch.await(20, TimeUnit.SECONDS)
+    }
+
+    @Test
+    fun testSocketProgramSubscribe() {
+        val latch = CountDownLatch(2)
+        val delegate = MockTrezoaLiveEventsDelegate()
+        var expected_id: String?
+        delegate.onConected = {
+            latch.countDown()
+            expected_id =
+                socket.programSubscribe("9B5XszUGdMaxCZ7uSQhPzdks5ZQSmWxrmzCSvtJ6Ns6g").getOrThrow()
+        }
+        delegate.onSubscribed = { socketId: Int, id: String ->
+            latch.countDown()
+            Assert.assertEquals(id, id)
+            socket.stop()
+        }
+        socket.start(delegate)
+        latch.await(20, TimeUnit.SECONDS)
+    }
+
+    @Test
+    fun testSocketProgramUnSubscribe() {
+        val latch = CountDownLatch(3)
+        val delegate = MockTrezoaLiveEventsDelegate()
+        var expected_id: String?
+        delegate.onConected = {
+            latch.countDown()
+            expected_id =
+                socket.programSubscribe("9B5XszUGdMaxCZ7uSQhPzdks5ZQSmWxrmzCSvtJ6Ns6g").getOrThrow()
+        }
+        delegate.onSubscribed = { socketId: Int, id: String ->
+            latch.countDown()
+            socket.programUnsubscribe(socketId)
+            Assert.assertEquals(id, id)
+        }
+        delegate.onUnsubscribed = { id: String ->
+            latch.countDown()
+            Assert.assertNotNull(id)
+            socket.stop()
+        }
+        socket.start(delegate)
+        latch.await(20, TimeUnit.SECONDS)
+    }
+
+    @Test
+    fun testSocketProgramNotification() {
+        val latch = CountDownLatch(3)
+        val delegate = MockTrezoaLiveEventsDelegate()
+        var expected_id: String? = null
+        delegate.onConected = {
+            latch.countDown()
+            expected_id =
+                socket.programSubscribe("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA").getOrThrow()
+        }
+
+        delegate.onSubscribed = { socketId: Int, id: String ->
+            latch.countDown()
+            Assert.assertEquals(expected_id, id)
+        }
+        delegate.onProgramNotification = { notification ->
+            latch.countDown()
+            Assert.assertNotNull(notification.params)
+            socket.stop()
+        }
+        socket.start(delegate)
+        latch.await(20, TimeUnit.SECONDS)
+    }
+
+    @Test
+    fun testSocketSignatureSubscribe() {
+        val latch = CountDownLatch(2)
+        val delegate = MockTrezoaLiveEventsDelegate()
+        var expected_id: String?
+        delegate.onConected = {
+            latch.countDown()
+            expected_id =
+                socket.signatureSubscribe("Nfq1kEFqe5dBbTnprNZZVfnzvYJAKpUoibhYFBbaBXp37L7bAip89Qbs6mtiybQprY2GucMTgkxWPx81dNWh2Mh")
+                    .getOrThrow()
+        }
+        delegate.onSubscribed = { socketId: Int, id: String ->
+            latch.countDown()
+            Assert.assertEquals(id, id)
+            socket.stop()
+        }
+        socket.start(delegate)
+        latch.await(20, TimeUnit.SECONDS)
+    }
+
+    @Test
+    fun testSocketSignatureUnSubscribe() {
+        val latch = CountDownLatch(3)
+        val delegate = MockTrezoaLiveEventsDelegate()
+        var expected_id: String?
+        delegate.onConected = {
+            latch.countDown()
+            expected_id =
+                socket.signatureSubscribe("Nfq1kEFqe5dBbTnprNZZVfnzvYJAKpUoibhYFBbaBXp37L7bAip89Qbs6mtiybQprY2GucMTgkxWPx81dNWh2Mh")
+                    .getOrThrow()
+        }
+        delegate.onSubscribed = { socketId: Int, id: String ->
+            latch.countDown()
+            socket.signatureUnsubscribe(socketId)
+            Assert.assertEquals(id, id)
+        }
+        delegate.onUnsubscribed = { id: String ->
+            latch.countDown()
+            Assert.assertNotNull(id)
+            socket.stop()
+        }
+        socket.start(delegate)
+        latch.await(20, TimeUnit.SECONDS)
+    }
+}

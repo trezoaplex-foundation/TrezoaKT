@@ -1,0 +1,43 @@
+package com.trezoa.api
+
+import com.trezoa.networking.RpcRequest
+import com.trezoa.networking.TrezoaResponseSerializer
+import com.trezoa.networking.makeRequestResult
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.serialization.Serializable
+
+class GetFeeRateGovernorRequest : RpcRequest() {
+    override val method: String = "getFeeRateGovernor"
+}
+
+@Serializable
+data class FeeRateGovernor (
+    val burnPercent: Long,
+    val maxLamportsPerSignature: Long,
+    val minLamportsPerSignature: Long,
+    val targetLamportsPerSignature: Long,
+    val targetSignaturesPerSlot: Long
+)
+
+@Serializable
+data class FeeRateGovernorInfo (
+    val feeRateGovernor: FeeRateGovernor
+)
+
+internal fun GetFeeRateGovernorSerializer() = TrezoaResponseSerializer(FeeRateGovernorInfo.serializer())
+
+fun Api.getFeeRateGovernor(onComplete: ((Result<FeeRateGovernorInfo>) -> Unit)) {
+    CoroutineScope(dispatcher).launch {
+        onComplete(getFeeRateGovernor())
+    }
+}
+
+suspend fun Api.getFeeRateGovernor(): Result<FeeRateGovernorInfo> =
+    router.makeRequestResult(GetFeeRateGovernorRequest(), GetFeeRateGovernorSerializer())
+        .let { result ->
+            @Suppress("UNCHECKED_CAST")
+            if (result.isSuccess && result.getOrNull() == null)
+                Result.failure(Error("Can not be null"))
+            else result as Result<FeeRateGovernorInfo> // safe cast, null case handled above
+        }

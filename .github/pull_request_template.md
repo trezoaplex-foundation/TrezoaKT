@@ -1,6 +1,6 @@
 ## Description
 - A brief description of the task/issue
-- https://linear.app/metaplex/issue/{LINEAR_ISSUE_ID}
+- https://linear.app/trezoaplex/issue/{LINEAR_ISSUE_ID}
 
 ## Work Cotpleted
 - a brief description of all the work cotpleted in this PR

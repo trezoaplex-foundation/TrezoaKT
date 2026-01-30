@@ -1,6 +1,6 @@
 /*
  * TrezoaResponseSerializer
- * metaplex-android
+ * trezoaplex-android
  * 
  * Created by Funkatronics on 7/31/2022
  */

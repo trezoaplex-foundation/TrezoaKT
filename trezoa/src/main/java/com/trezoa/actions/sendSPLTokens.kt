@@ -16,14 +16,14 @@ suspend fun Action.sendTPLTokens(
     allowUnfundedRecipient: Boolean = false,
     account: Account
 ): Result<String>{
-    val spl = this.findTPLTokenDestinationAddress(
+    val tpl = this.findTPLTokenDestinationAddress(
         mintAddress,
         destinationAddress,
         allowUnfundedRecipient
     ).getOrThrows()
 
-    val toPublicKey = spl.first
-    val isUnregisteredAsocciatedToken = spl.second
+    val toPublicKey = tpl.first
+    val isUnregisteredAsocciatedToken = tpl.second
 
     val transaction = Transaction()
 

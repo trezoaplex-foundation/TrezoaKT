@@ -170,7 +170,7 @@ RPC requests are an application’s gateway to the Trezoa cluster. TrezoaKT can 
 sealed class RPCEndpoint(open val url: URL, open val urlWebSocket: URL, open val network: Network) {
 
     object mainnetBetaSerum: RPCEndpoint(
-        URL("https://trezoa-api.projectserum.com"), URL("https://trezoa-api.projectserum.com"), Network.mainnetBeta
+        URL("https://trezoa-api.trezoaserum.com"), URL("https://trezoa-api.trezoaserum.com"), Network.mainnetBeta
     )
 
     object mainnetBetaTrezoa: RPCEndpoint(

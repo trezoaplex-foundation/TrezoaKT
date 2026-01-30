@@ -155,7 +155,7 @@ val mainnet_beta = """
           "symbol": "wUSDT",
           "name": "Wrapped USDT (Sollet)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/explorer/public/tokens/usdt.svg",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/explorer/public/tokens/usdt.svg",
           "tags": [
             "stablecoin",
             "wrapped-sollet",
@@ -342,7 +342,7 @@ val mainnet_beta = """
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0x476c5E26a75bd202a9683ffD34359C0CC15be0fF/logo.png",
           "tags": [],
           "extensions": {
-            "website": "https://projectserum.com/"
+            "website": "https://trezoaserum.com/"
           }
         },
         {
@@ -351,7 +351,7 @@ val mainnet_beta = """
           "symbol": "FTT",
           "name": "Wrapped FTT (Sollet)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/AGFEad2et2ZJif9jaGpdMixQqvW5i81aBdvKe7PHNfz3/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/AGFEad2et2ZJif9jaGpdMixQqvW5i81aBdvKe7PHNfz3/logo.png",
           "tags": [
             "wrapped-sollet",
             "ethereum"
@@ -370,7 +370,7 @@ val mainnet_beta = """
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0x476c5E26a75bd202a9683ffD34359C0CC15be0fF/logo.png",
           "tags": [],
           "extensions": {
-            "website": "https://projectserum.com/"
+            "website": "https://trezoaserum.com/"
           }
         },
         {
@@ -592,7 +592,7 @@ val mainnet_beta = """
           "symbol": "MAPS",
           "name": "MAPS",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/explorer/public/tokens/maps.svg",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/explorer/public/tokens/maps.svg",
           "tags": [],
           "extensions": {
             "website": "https://maps.me/"
@@ -616,7 +616,7 @@ val mainnet_beta = """
           "symbol": "BRZ",
           "name": "BRZ",
           "decimals": 4,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/explorer/public/tokens/brz.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/explorer/public/tokens/brz.png",
           "tags": [],
           "extensions": {
             "website": "https://brztoken.io/"
@@ -628,7 +628,7 @@ val mainnet_beta = """
           "symbol": "USDT",
           "name": "USDT",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/explorer/public/tokens/usdt.svg",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/explorer/public/tokens/usdt.svg",
           "tags": [
             "stablecoin"
           ],
@@ -642,7 +642,7 @@ val mainnet_beta = """
           "symbol": "xMARK",
           "name": "Standard",
           "decimals": 9,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/2oDxYGgTBmST4rc3yn1YtcSEck7ReDZ8wHWLqZAuNWXH/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/2oDxYGgTBmST4rc3yn1YtcSEck7ReDZ8wHWLqZAuNWXH/logo.png",
           "tags": [
             "wrapped",
             "wormhole"
@@ -660,7 +660,7 @@ val mainnet_beta = """
           "symbol": "RAY",
           "name": "Raydium",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [],
           "extensions": {
             "website": "https://raydium.io/"
@@ -672,7 +672,7 @@ val mainnet_beta = """
           "symbol": "RAY-WUSDT",
           "name": "Raydium Legacy LP Token V2 (RAY-WUSDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -686,7 +686,7 @@ val mainnet_beta = """
           "symbol": "RAY-TRZ",
           "name": "Raydium LP Token V2 (RAY-TRZ)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -700,7 +700,7 @@ val mainnet_beta = """
           "symbol": "LINK-WUSDT",
           "name": "Raydium LP Token V2 (LINK-WUSDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -714,7 +714,7 @@ val mainnet_beta = """
           "symbol": "ETH-WUSDT",
           "name": "Raydium LP Token V2 (ETH-WUSDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -728,7 +728,7 @@ val mainnet_beta = """
           "symbol": "RAY-USDC",
           "name": "Raydium Legacy LP Token V2 (RAY-USDC)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -742,7 +742,7 @@ val mainnet_beta = """
           "symbol": "RAY-SRM",
           "name": "Raydium Legacy LP Token V2 (RAY-SRM)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -756,7 +756,7 @@ val mainnet_beta = """
           "symbol": "RAY-WUSDT",
           "name": "Raydium Legacy LP Token V3 (RAY-WUSDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -770,7 +770,7 @@ val mainnet_beta = """
           "symbol": "RAY-USDC",
           "name": "Raydium LP Token V3 (RAY-USDC)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -784,7 +784,7 @@ val mainnet_beta = """
           "symbol": "RAY-SRM",
           "name": "Raydium LP Token V3 (RAY-SRM)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -798,7 +798,7 @@ val mainnet_beta = """
           "symbol": "RAY-TRZ",
           "name": "Raydium LP Token V3 (RAY-TRZ)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -812,7 +812,7 @@ val mainnet_beta = """
           "symbol": "RAY-ETH",
           "name": "Raydium LP Token V3 (RAY-ETH)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -826,7 +826,7 @@ val mainnet_beta = """
           "symbol": "FIDA-RAY",
           "name": "Raydium Fusion LP Token V4 (FIDA-RAY)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -840,7 +840,7 @@ val mainnet_beta = """
           "symbol": "OXY-RAY",
           "name": "Raydium Fusion LP Token V4 (OXY-RAY)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -854,7 +854,7 @@ val mainnet_beta = """
           "symbol": "MAPS-RAY",
           "name": "Raydium Fusion LP Token V4 (MAPS-RAY)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -868,7 +868,7 @@ val mainnet_beta = """
           "symbol": "KIN-RAY",
           "name": "Raydium Legacy Fusion LP Token V4 (KIN-RAY)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -882,7 +882,7 @@ val mainnet_beta = """
           "symbol": "RAY-USDT",
           "name": "Raydium LP Token V4 (RAY-USDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -896,7 +896,7 @@ val mainnet_beta = """
           "symbol": "TRZ-USDC",
           "name": "Raydium LP Token V4 (TRZ-USDC)",
           "decimals": 9,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -910,7 +910,7 @@ val mainnet_beta = """
           "symbol": "YFI-USDC",
           "name": "Raydium LP Token V4 (YFI-USDC)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -924,7 +924,7 @@ val mainnet_beta = """
           "symbol": "SRM-USDC",
           "name": "Raydium LP Token V4 (SRM-USDC)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -938,7 +938,7 @@ val mainnet_beta = """
           "symbol": "FTT-USDC",
           "name": "Raydium LP Token V4 (FTT-USDC)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -952,7 +952,7 @@ val mainnet_beta = """
           "symbol": "BTC-USDC",
           "name": "Raydium LP Token V4 (BTC-USDC)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -966,7 +966,7 @@ val mainnet_beta = """
           "symbol": "SUSHI-USDC",
           "name": "Raydium LP Token V4 (SUSHI-USDC)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -980,7 +980,7 @@ val mainnet_beta = """
           "symbol": "TOMO-USDC",
           "name": "Raydium LP Token V4 (TOMO-USDC)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -994,7 +994,7 @@ val mainnet_beta = """
           "symbol": "LINK-USDC",
           "name": "Raydium LP Token V4 (LINK-USDC)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1008,7 +1008,7 @@ val mainnet_beta = """
           "symbol": "ETH-USDC",
           "name": "Raydium LP Token V4 (ETH-USDC)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1022,7 +1022,7 @@ val mainnet_beta = """
           "symbol": "COPE-USDC",
           "name": "Raydium Fusion LP Token V4 (COPE-USDC)",
           "decimals": 0,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1036,7 +1036,7 @@ val mainnet_beta = """
           "symbol": "TRZ-USDT",
           "name": "Raydium LP Token V4 (TRZ-USDT)",
           "decimals": 9,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1050,7 +1050,7 @@ val mainnet_beta = """
           "symbol": "YFI-USDT",
           "name": "Raydium LP Token V4 (YFI-USDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1064,7 +1064,7 @@ val mainnet_beta = """
           "symbol": "SRM-USDT",
           "name": "Raydium LP Token V4 (SRM-USDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1078,7 +1078,7 @@ val mainnet_beta = """
           "symbol": "FTT-USDT",
           "name": "Raydium LP Token V4 (FTT-USDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1092,7 +1092,7 @@ val mainnet_beta = """
           "symbol": "BTC-USDT",
           "name": "Raydium LP Token V4 (BTC-USDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1106,7 +1106,7 @@ val mainnet_beta = """
           "symbol": "SUSHI-USDT",
           "name": "Raydium LP Token V4 (SUSHI-USDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1120,7 +1120,7 @@ val mainnet_beta = """
           "symbol": "TOMO-USDT",
           "name": "Raydium LP Token V4 (TOMO-USDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1134,7 +1134,7 @@ val mainnet_beta = """
           "symbol": "LINK-USDT",
           "name": "Raydium LP Token V4 (LINK-USDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1148,7 +1148,7 @@ val mainnet_beta = """
           "symbol": "ETH-USDT",
           "name": "Raydium LP Token V4 (ETH-USDT)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1162,7 +1162,7 @@ val mainnet_beta = """
           "symbol": "YFI-SRM",
           "name": "Raydium LP Token V4 (YFI-SRM)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1176,7 +1176,7 @@ val mainnet_beta = """
           "symbol": "FTT-SRM",
           "name": "Raydium LP Token V4 (FTT-SRM)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1190,7 +1190,7 @@ val mainnet_beta = """
           "symbol": "BTC-SRM",
           "name": "Raydium LP Token V4 (BTC-SRM)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1204,7 +1204,7 @@ val mainnet_beta = """
           "symbol": "SUSHI-SRM",
           "name": "Raydium LP Token V4 (SUSHI-SRM)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1218,7 +1218,7 @@ val mainnet_beta = """
           "symbol": "TOMO-SRM",
           "name": "Raydium LP Token V4 (TOMO-SRM)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1232,7 +1232,7 @@ val mainnet_beta = """
           "symbol": "LINK-SRM",
           "name": "Raydium LP Token V4 (LINK-SRM)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1246,7 +1246,7 @@ val mainnet_beta = """
           "symbol": "ETH-SRM",
           "name": "Raydium LP Token V4 (ETH-SRM)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -1260,7 +1260,7 @@ val mainnet_beta = """
           "symbol": "SRM-TRZ",
           "name": "Raydium LP Token V4 (SRM-TRZ)",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [
             "lp-token"
           ],
@@ -2021,7 +2021,7 @@ val mainnet_beta = """
           "symbol": "MAPSPOOL",
           "name": "Bonfida Maps Pool",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/explorer/public/tokens/maps.svg",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/explorer/public/tokens/maps.svg",
           "tags": [],
           "extensions": {
             "website": "https://bonfida.com/"
@@ -2054,7 +2054,7 @@ val mainnet_beta = """
           "symbol": "RAYPOOL",
           "name": "Bonfida Ray Pool",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/RVKd61ztZW9GUwhRbbLoYVRE5Xf1B2tVscKqwZqXgEr/logo.png",
           "tags": [],
           "extensions": {
             "website": "https://bonfida.com/"
@@ -5922,7 +5922,7 @@ val mainnet_beta = """
           "symbol": "AAPE",
           "name": "AAPE",
           "decimals": 9,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/5kjfp2qfRbqCXTQeUYgHNnTLf13eHoKjC5hHynW9DvQE/logo.jpg",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/5kjfp2qfRbqCXTQeUYgHNnTLf13eHoKjC5hHynW9DvQE/logo.jpg",
           "tags": [],
           "extensions": {
             "website": "https://aape.io/"
@@ -5934,7 +5934,7 @@ val mainnet_beta = """
           "symbol": "COPE",
           "name": "COPE",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/3K6rftdAaQYMPunrtNRHgnK2UAtjm2JwyT2oCiTDouYE/logo.jpg",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/3K6rftdAaQYMPunrtNRHgnK2UAtjm2JwyT2oCiTDouYE/logo.jpg",
           "tags": [
             "trading",
             "index",
@@ -5950,7 +5950,7 @@ val mainnet_beta = """
           "symbol": "MCAPS",
           "name": "Mango Market Caps",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/2prC8tcVsXwVJAinhxd2zeMeWMWaVyzPoQeLKyDZRFKd/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/2prC8tcVsXwVJAinhxd2zeMeWMWaVyzPoQeLKyDZRFKd/logo.png",
           "tags": [
             "mango"
           ],
@@ -6098,7 +6098,7 @@ val mainnet_beta = """
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0x476c5E26a75bd202a9683ffD34359C0CC15be0fF/logo.png",
           "tags": [],
           "extensions": {
-            "website": "https://projectserum.com/"
+            "website": "https://trezoaserum.com/"
           }
         },
         {
@@ -6148,7 +6148,7 @@ val mainnet_beta = """
           "symbol": "SPD",
           "name": "Solpad",
           "decimals": 10,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/4DrV8khCoPS3sWRj6t1bb2DzT9jD4mZp6nc7Jisuuv1b/logo.jpg",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/4DrV8khCoPS3sWRj6t1bb2DzT9jD4mZp6nc7Jisuuv1b/logo.jpg",
           "tags": [],
           "extensions": {
             "website": "https://www.solpad.io/"
@@ -6194,7 +6194,7 @@ val mainnet_beta = """
           "symbol": "SLIM",
           "name": "Solanium",
           "decimals": 6,
-          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-labs/token-list/assets/mainnet/xxxxa1sKNGwFtw2kFn8XauW9xq8hBZ5kVtcSesTT9fW/logo.png",
+          "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/xxxxa1sKNGwFtw2kFn8XauW9xq8hBZ5kVtcSesTT9fW/logo.png",
           "tags": [],
           "extensions": {
             "website": "https://solanium.io/"

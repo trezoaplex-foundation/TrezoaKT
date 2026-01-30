@@ -22,11 +22,11 @@ android {
         consumerProguardFiles "consumer-rules.pro"
 
         // read RPC URL properties fro testing
-        def defaultRpcUrl = project.properties["testing.rpc.defaultUrl"]
-        def rpcUrl = project.properties["rpcUrl"] ?: defaultRpcUrl
+        def defaultRpcUrl = trezoa.properties["testing.rpc.defaultUrl"]
+        def rpcUrl = trezoa.properties["rpcUrl"] ?: defaultRpcUrl
 
-        def useLocalValidator = project.properties["localValidator"].toBoolean()
-        def localRpcUrl = project.properties["testing.rpc.localUrl"]
+        def useLocalValidator = trezoa.properties["localValidator"].toBoolean()
+        def localRpcUrl = trezoa.properties["testing.rpc.localUrl"]
         if (useLocalValidator && localRpcUrl != null) rpcUrl = localRpcUrl
 
         // set RPC URL (used in testing)

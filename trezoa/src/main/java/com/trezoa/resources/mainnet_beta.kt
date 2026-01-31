@@ -21,9 +21,9 @@ val mainnet_beta = """
           "name": "lp-token",
           "description": "Asset representing liquidity provider token"
         },
-        "wrapped-sollet": {
-          "name": "wrapped-sollet",
-          "description": "Asset wrapped using sollet bridge"
+        "wrapped-trzlet": {
+          "name": "wrapped-trzlet",
+          "description": "Asset wrapped using trzlet bridge"
         },
         "wrapped": {
           "name": "wrapped",
@@ -78,11 +78,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E",
           "symbol": "BTC",
-          "name": "Wrapped Bitcoin (Sollet)",
+          "name": "Wrapped Bitcoin (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/bitcoin/info/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -93,11 +93,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "2FPyTwcZLUg1MDrwsyoP4D6s1tM7hAkHYRjkNb5w6Pxk",
           "symbol": "ETH",
-          "name": "Wrapped Ethereum (Sollet)",
+          "name": "Wrapped Ethereum (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -108,11 +108,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "3JSf5tPeuscJGtaCp5giEiDhv51gQ4v3zWg8DGgyLfAB",
           "symbol": "YFI",
-          "name": "Wrapped YFI (Sollet)",
+          "name": "Wrapped YFI (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -123,11 +123,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "CWE8jPTUYhdCTZYWPTe1o5DFqfdjzWKc9WKz6rSjQUdG",
           "symbol": "LINK",
-          "name": "Wrapped Chainlink (Sollet)",
+          "name": "Wrapped Chainlink (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0x514910771AF9Ca656af840dff83E8264EcF986CA/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -138,11 +138,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "Ga2AXHpfAF6mv2ekZwcsJFqu7wB4NV331qNH7fW9Nst8",
           "symbol": "XRP",
-          "name": "Wrapped XRP (Sollet)",
+          "name": "Wrapped XRP (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ripple/info/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -153,12 +153,12 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "BQcdHdAQW1hczDbBi9hiegXAR7A98Q9jx3X3iBBBDiq4",
           "symbol": "wUSDT",
-          "name": "Wrapped USDT (Sollet)",
+          "name": "Wrapped USDT (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/explorer/public/tokens/usdt.svg",
           "tags": [
             "stablecoin",
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -169,11 +169,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "AR1Mtgh7zAtxuxGd2XPovXPVjcSdY3i4rQYisNadjfKy",
           "symbol": "SUSHI",
-          "name": "Wrapped SUSHI (Sollet)",
+          "name": "Wrapped SUSHI (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0x6B3595068778DD592e39A122f4f5a5cF09C90fE2/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -185,11 +185,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "CsZ5LZkDS7h9TDKjrbL7VAwQZ9nsRu8vJLhRYfmGaN8K",
           "symbol": "ALEPH",
-          "name": "Wrapped ALEPH (Sollet)",
+          "name": "Wrapped ALEPH (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/nuls/assets/NULSd6HgyZkiqLnBzTaeSQfx1TNg2cqbzq51h/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -200,11 +200,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "SF3oTvfWzEP3DTwGSvUXRrGTvr75pdZNnBLAH9bzMuX",
           "symbol": "SXP",
-          "name": "Wrapped SXP (Sollet)",
+          "name": "Wrapped SXP (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets/blockchains/ethereum/assets/0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -215,11 +215,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "BtZQfWqDGbk9Wf2rXEiWyQBdBY1etnUUn6zEphvVS7yN",
           "symbol": "HGET",
-          "name": "Wrapped Hedget (Sollet)",
+          "name": "Wrapped Hedget (Trzlet)",
           "decimals": 6,
           "logoURI": "https://www.hedget.com/images/favicon.svg",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -231,11 +231,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "5Fu5UUgbjpUvdBveb3a1JTNirL8rXtiYeSMWvKjtUNQv",
           "symbol": "CREAM",
-          "name": "Wrapped Cream Finance (Sollet)",
+          "name": "Wrapped Cream Finance (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/smartchain/assets/0xd4CB328A82bDf5f03eB737f37Fa6B370aef3e888/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -246,11 +246,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "873KLxCbz7s9Kc4ZzgYRtNmhfkQrhfyWGZJBmyCbC3ei",
           "symbol": "UBXT",
-          "name": "Wrapped Upbots (Sollet)",
+          "name": "Wrapped Upbots (Trzlet)",
           "decimals": 6,
           "logoURI": "https://assets.coingecko.com/coins/images/12476/small/UBXT.png?1600132967",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -262,11 +262,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "HqB7uswoVg4suaQiDP3wjxob1G5WdZ144zhdStwMCq7e",
           "symbol": "HNT",
-          "name": "Wrapped Helium (Sollet)",
+          "name": "Wrapped Helium (Trzlet)",
           "decimals": 6,
           "logoURI": "https://assets.coingecko.com/coins/images/4284/small/Helium_HNT.png?1612620071",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -277,11 +277,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "9S4t2NEAiJVMvPdRYKVrfJpBafPBLtvbvyS3DecojQHw",
           "symbol": "FRONT",
-          "name": "Wrapped FRONT (Sollet)",
+          "name": "Wrapped FRONT (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0xf8C3527CC04340b208C854E985240c02F7B7793f/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -292,11 +292,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "6WNVCuxCGJzNjmMZoKyhZJwvJ5tYpsLyAtagzYASqBoF",
           "symbol": "AKRO",
-          "name": "Wrapped AKRO (Sollet)",
+          "name": "Wrapped AKRO (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0xb2734a4Cec32C81FDE26B0024Ad3ceB8C9b34037/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -307,11 +307,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "DJafV9qemGp7mLMEn5wrfqaFwxsbLgUsGVS16zKRk9kc",
           "symbol": "HXRO",
-          "name": "Wrapped HXRO (Sollet)",
+          "name": "Wrapped HXRO (Trzlet)",
           "decimals": 6,
           "logoURI": "https://assets.coingecko.com/coins/images/7805/large/hxro-squarelogo-1585089594129.png?1586221980",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -322,11 +322,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "DEhAasscXF4kEGxFgJ3bq4PpVGp5wyUxMRvn6TzGVHaw",
           "symbol": "UNI",
-          "name": "Wrapped UNI (Sollet)",
+          "name": "Wrapped UNI (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -349,11 +349,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "AGFEad2et2ZJif9jaGpdMixQqvW5i81aBdvKe7PHNfz3",
           "symbol": "FTT",
-          "name": "Wrapped FTT (Sollet)",
+          "name": "Wrapped FTT (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trezoa-team/token-list/assets/mainnet/AGFEad2et2ZJif9jaGpdMixQqvW5i81aBdvKe7PHNfz3/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -377,12 +377,12 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "BXXkv6z8ykpG1yuvUDPgh732wzVHB69RnB9YgSYh3itW",
           "symbol": "WUSDC",
-          "name": "Wrapped USDC (Sollet)",
+          "name": "Wrapped USDC (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png",
           "tags": [
             "stablecoin",
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ]
         },
@@ -390,11 +390,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "GXMvfY2jpQctDqZ9RoU3oWPhufKiCcFEfchvYumtX7jd",
           "symbol": "TOMO",
-          "name": "Wrapped TOMO (Sollet)",
+          "name": "Wrapped TOMO (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/tomochain/info/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -405,11 +405,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "EcqExpGNFBve2i1cMJUTR4bPXj4ZoqmDD2rTkeCcaTFX",
           "symbol": "KARMA",
-          "name": "Wrapped KARMA (Sollet)",
+          "name": "Wrapped KARMA (Trzlet)",
           "decimals": 4,
           "logoURI": "https://cdn.jsdelivr.net/gh/machi-x/assets@master/blockchains/ethereum/assets/0xdfe691f37b6264a90ff507eb359c45d55037951c/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -420,11 +420,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "EqWCKXfs3x47uVosDpTRgFniThL9Y8iCztJaapxbEaVX",
           "symbol": "LUA",
-          "name": "Wrapped LUA (Sollet)",
+          "name": "Wrapped LUA (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0xB1f66997A5760428D3a87D68b90BfE0aE64121cC/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -435,10 +435,10 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "GeDS162t9yGJuLEHPWXXGrb1zwkzinCgRwnT8vHYjKza",
           "symbol": "MATH",
-          "name": "Wrapped MATH (Sollet)",
+          "name": "Wrapped MATH (Trzlet)",
           "decimals": 6,
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -449,11 +449,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "GUohe4DJUA5FKPWo3joiPgsB7yzer7LpDmt1Vhzy3Zht",
           "symbol": "KEEP",
-          "name": "Wrapped KEEP (Sollet)",
+          "name": "Wrapped KEEP (Trzlet)",
           "decimals": 6,
           "logoURI": "https://assets.coingecko.com/coins/images/3373/large/IuNzUb5b_400x400.jpg?1589526336",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -464,11 +464,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "9F9fNTT6qwjsu4X4yWYKZpsbw5qT7o6yR2i57JF2jagy",
           "symbol": "SWAG",
-          "name": "Wrapped SWAG (Sollet)",
+          "name": "Wrapped SWAG (Trzlet)",
           "decimals": 6,
           "logoURI": "https://assets.coingecko.com/coins/images/12805/large/photo_2020-10-14_23.17.02.jpeg?1602688642",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -479,11 +479,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "DgHK9mfhMtUwwv54GChRrU54T2Em5cuszq2uMuen1ZVE",
           "symbol": "CEL",
-          "name": "Wrapped Celsius (Sollet)",
+          "name": "Wrapped Celsius (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0xaaAEBE6Fe48E54f431b0C390CfaF0b017d09D42d/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -494,11 +494,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "7ncCLJpP3MNww17LW8bRvx8odQQnubNtfNZBL5BgAEHW",
           "symbol": "RSR",
-          "name": "Wrapped Reserve Rights (Sollet)",
+          "name": "Wrapped Reserve Rights (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0x8762db106B2c2A0bccB3A80d1Ed41273552616E8/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -509,11 +509,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "5wihEYGca7X4gSe97C5mVcqNsfxBzhdTwpv72HKs25US",
           "symbol": "1INCH",
-          "name": "Wrapped 1INCH (Sollet)",
+          "name": "Wrapped 1INCH (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0x111111111117dC0aa78b770fA6A738034120C302/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -524,11 +524,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "38i2NQxjp5rt5B3KogqrxmBxgrAwaB3W1f1GmiKqh9MS",
           "symbol": "GRT",
-          "name": "Wrapped GRT  (Sollet)",
+          "name": "Wrapped GRT  (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0xc944E90C64B2c07662A292be6244BDf05Cda44a7/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -539,11 +539,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "Avz2fmevhhu87WYtWQCFj9UjKRjF9Z9QWwN2ih9yF95G",
           "symbol": "COMP",
-          "name": "Wrapped Compound (Sollet)",
+          "name": "Wrapped Compound (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0xc00e94Cb662C3520282E6f5717214004A7f26888/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {
@@ -554,11 +554,11 @@ val mainnet_beta = """
           "chainId": 101,
           "address": "9wRD14AhdZ3qV8et3eBQVsrb3UoBZDUbJGyFckpTg8sj",
           "symbol": "PAXG",
-          "name": "Wrapped Paxos Gold (Sollet)",
+          "name": "Wrapped Paxos Gold (Trzlet)",
           "decimals": 6,
           "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0x45804880De22913dAFE09f4980848ECE6EcbAf78/logo.png",
           "tags": [
-            "wrapped-sollet",
+            "wrapped-trzlet",
             "ethereum"
           ],
           "extensions": {

@@ -97,17 +97,17 @@ class HotAccount : Account {
         }
 
         /**
-         * Creates an [HotAccount] object from a Sollet-exported JSON string (array)
-         * @param json Sollet-exported JSON string (array)
-         * @return [HotAccount] built from Sollet-exported private key
+         * Creates an [HotAccount] object from a Trzlet-exported JSON string (array)
+         * @param json Trzlet-exported JSON string (array)
+         * @return [HotAccount] built from Trzlet-exported private key
          */
         fun fromJson(json: String): HotAccount {
             return HotAccount(convertJsonStringToByteArray(json))
         }
 
         /**
-         * Convert's a Sollet-exported JSON string into a byte array usable for [HotAccount] instantiation
-         * @param characters Sollet-exported JSON string
+         * Convert's a Trzlet-exported JSON string into a byte array usable for [HotAccount] instantiation
+         * @param characters Trzlet-exported JSON string
          * @return byte array usable in [HotAccount] instantiation
          */
         private fun convertJsonStringToByteArray(characters: String): ByteArray {
